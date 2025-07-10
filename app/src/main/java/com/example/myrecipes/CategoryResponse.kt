@@ -1,6 +1,10 @@
 package com.example.myrecipes
 
-data class CategoryX(
+data class CategoryResponse(
+    val categories: List<Category>
+)
+
+data class Category(
     val idCategory: String,
     val strCategory: String,
     val strCategoryDescription: String,
